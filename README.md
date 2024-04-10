@@ -4,9 +4,9 @@
 
 # PROGRAMA DESENVOLVE 2024 - GRUPO BOTICÁRIO
 [SOBRE O PROGRAMA](https://desenvolve.grupoboticario.com.br/)
-- INÍCIO: 
-- TÉRMINO:
-- TRILHA ESCOLHIDA: Desenvolvimento Full Stack  
+- **INÍCIO:**  20/01/2024
+- **TÉRMINO:** 09/08/2024
+- **TRILHA ESCOLHIDA:** Desenvolvimento Full Stack  
 
 **Programa gratuito de formação e inclusão de talentos em tecnologia do Grupo Boticário.**
 
