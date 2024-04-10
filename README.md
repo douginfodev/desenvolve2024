@@ -4,7 +4,7 @@
 
 # PROGRAMA DESENVOLVE 2024 - GRUPO BOTICÁRIO
 [SOBRE O PROGRAMA](https://desenvolve.grupoboticario.com.br/)
-- **INÍCIO:**  20/01/2024
+- **INÍCIO:**  29/01/2024
 - **TÉRMINO:** 09/08/2024
 - **TRILHA ESCOLHIDA:** Desenvolvimento Full Stack  
 
