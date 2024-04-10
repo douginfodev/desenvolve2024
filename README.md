@@ -1,19 +1,83 @@
-# desenvolve2024
-Programa Desenvolve 2024 - O Boticário
+<div>
+<img src="https://lh7-us.googleusercontent.com/IH_T1zW4b7tI80I1pzHrKI-v19Gsf9QzTMPkiRZZdEggP7-QkDB4UfSKLCQIHMw1Hzl1Fv7VCrkCaJBlWC1YJfCS9mMP91cY-Y2zueNC284Hp9qNv2CRcFGSgAy4sW_OsNeZN7kDU3PHmPWZQGxggo0" alt="Banner Programa Desenvolve 2024">
+</div>
 
-1) Alternando visibilidade do formulário
-Imagine que você está desenvolvendo uma aplicação web similar ao Fokus, chamada "TaskFlow", que também possui uma funcionalidade de lista de tarefas.
+# PROGRAMA DESENVOLVE 2024 - GRUPO BOTICÁRIO
+[SOBRE O PROGRAMA](https://desenvolve.grupoboticario.com.br/)
+INÍCIO: 
+TÉRMINO:
+TRILHA ESCOLHIDA: Desenvolvimento Full Stack  
 
-Sua tarefa é implementar a funcionalidade de alternar a visibilidade do formulário de adicionar tarefas. Quando o usuário clica no botão "Adicionar Tarefa", o formulário, que inicialmente está escondido, deve ser exibido. Se o usuário clicar novamente no botão enquanto o formulário estiver visível, este deve ser escondido.
+**Programa gratuito de formação e inclusão de talentos em tecnologia do Grupo Boticário.**
 
-Para isso, você precisará monitorar o evento de clique no botão "Adicionar Tarefa" e alternar a classe hidden no formulário de adição de tarefa. O botão "Adicionar Tarefa" tem a classe .btn-add-task e o formulário tem a classe .form-add-task. Utilize o JavaScript para adicionar a lógica necessária.
+Nós acreditamos que a tecnologia é impulsionadora do desenvolvimento e que o futuro depende da inclusão. Temos o compromisso de impulsionar mais representatividade no mercado de tecnologia, no qual a oferta de vagas tende a crescer até 2030.
 
-2) Criação de uma lista de tarefas interativa
-Você está desenvolvendo uma aplicação web chamada "Task Flow" para gerenciamento de tarefas. Você deseja permitir que os usuários adicionem novas tarefas por meio de um formulário, utilizando um textarea para a descrição da tarefa. Sua tarefa é implementar a funcionalidade de adicionar tarefas à lista e garantir que essas tarefas sejam salvas no localStorage, de modo que elas persistam mesmo após o navegador ser recarregado.
+# Como funciona o Desenvolve
+O Desenvolve, programa gratuito de formação e inclusão em tecnologia do Grupo Boticário, possibilitou a contratação de mais de 150 pessoas até aqui! Nesta quarta edição, os estudantes terão:
+6 meses de aulas online com carga semanal de 20h;
 
-Siga as instruções para completar este exercício:
+- Acesso ao ensino de línguas (inglês e espanhol) durante todo o curso*;
+- Acompanhamento via mentoria com profissionais do Grupo Boticário*;
+- Plantões de dúvidas;
+- Conteúdos extras via eventos ao vivo;
+- Projetos práticos e treinamentos de empregabilidade;
+- Criação de um portfólio pessoal;
 
-Adicione um ouvinte de evento submit ao formulário de adição de tarefas. Quando o formulário for submetido, impeça o comportamento padrão de recarga da página;
-Recupere o valor digitado no textarea e crie um objeto de tarefa com esse valor;
-Adicione a nova tarefa a uma lista de tarefas e salve essa lista no localStorage;
-Considere que já existe um textarea com a classe app__form-textarea e um formulário no seu HTML.
+# Desenvolvimento Full Stack
+
+A pessoa desenvolvedora Full Stack é responsável por toda a construção da solução e suas integrações.
+Aprenda lógica de programação, javascript, HTML/CSS, Node.js, Git e Github.
+
+### EMENTA DA TRILHA
+
+A pessoa desenvolvedora Full Stack é responsável por toda a construção da solução e suas integrações. Aprenda lógica de programação, javascript, Flutter, HTML/CSS, Node.js, Git e Github.
+
+
+Abaixo, você encontra a grade de conteúdos e o cronograma do Desenvolve 2024 para a formação em Full Stack. Mas não se preocupe! Se você não entendeu algum termo ou não conhece os cursos listados abaixo, não tem problema: nenhum conhecimento prévio em tecnologia (com exceção do uso de um notebook e de como acessar a internet) será exigido de você, nem mesmo o idioma inglês.
+
+Curso
+
+Carga Horária
+HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags
+HTML e CSS: Classes, posicionamento e Flexbox
+HTML e CSS: cabeçalho, footer e variáveis CSS
+HTML e CSS: trabalhando com responsividade e publicação de projetos
+HTML e CSS: responsividade com mobile-first
+Git e Github: controle e compartilhe seu código
+JavaScript e HTML: desenvolva um jogo e pratique lógica de programação
+JavaScript: tipos, variáveis e funções
+JavaScript: Arrays
+JavaScript: objetos
+Node.js: criando sua primeira biblioteca
+JavaScript: programação orientada a objetos
+HTTP: entendendo a web por baixo dos panos
+JavaScript: manipulando elementos no DOM
+JavaScript para Web: Crie páginas dinâmicas
+JavaScript na Web: armazenando dados no navegador
+JavaScript: consumindo e tratando dados de uma API
+JavaScript: métodos de array
+JavaScript: criando requisições
+JavaScript: validando formulários
+Figma: design visual de um site mobile
+Figma: conhecendo componentes da interface
+Design System: projetando elementos
+Design System: criando componentes e documentando
+PostgreSQL
+PostgreSQL: Views, Sub-Consultas e Funções
+PostgreSQL: comandos DML e DDL
+MongoDB: conhecendo um banco de dados NoSQL
+Node.js: criando uma API Rest com Express e MongoDB
+Node.js: lidando com buscas, filtros, paginação e erros em uma API
+Node.js: testes unitários e de integração
+Node.js: implementando testes em uma API Rest
+Node.js: criptografia e tokens JWT
+Node.js: criando API Rest com autenticação, perfis de usuários e permissões
+Integração Contínua: mais qualidade e menos risco no desenvolvimento
+Entrega Contínua: confiabilidade e qualidade na implantação de software
+Docker: criando e gerenciando containers
+The Twelve-Factor App: Metodologia para construção de aplicações robustas
+Microsserviços: padrões de projeto
+Microsserviços: explorando os conceitos
+Integração Contínua: testes automatizados e pipeline no Github Actions
+Integração Contínua: Pipeline Docker no Github Actions
+LGPD: conhecendo e entendendo seus impactos
