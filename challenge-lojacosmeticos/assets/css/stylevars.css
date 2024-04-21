@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --container-color: #051834;
+  --container-image: url('../images/bckdarkbluesection.png');
+
+  --border-color: #7bbcfc;
+  --primary-color: #7bbcfc;
+  --secondary-color: #0c4d8d;
+
+  --background-color: #060A26;
+  --background-image:  url('../images/backdarkblue.png');
+  --background1-image:  url('../images/bck-card-titulo.png');
+  --foreground-color: #2c2965;
+  --foreground-image:  url('../images/foreground.png');
+
+  --section-space: 16px;
+  --line-height: 24px;
+
+  --font-family: 'Roboto', serif;
+  font-size: 62.5%;
+  font-family: var(--font-family);
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  width: 98%; /*1366 XX 768*/
+  height: 1500px;
+  margin: 0 auto;
+  max-width: 1900px;
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+}
+
+body {
+  font-family:  var(--font-family);
+  font-size: 2.0rem;
+  font-weight: 400px;
+  line-height: 3.5rem;
+  color: white;
+  border-color: var(--border-color);
+  border: none;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+}
+
+p{
+   margin-bottom: 16px; 
+   font-size: 2.4rem;
+   font-weight: 400;
+   line-height: 30px;
+  color: white;
+}
+
+b{
+  color: var(--primary-color);
+}
+span {
+    font-size: 1.4rem;
+    color: white;
+  }
+
+ul{
+  width: 92%;
+  margin-left: 30px;
+  color: white;
+}
+
+ul li {
+  font-size: 2.0rem;
+  line-height: 2.3rem;
+  margin-bottom: 12px;
+  color: var(--border-color);  
+}
+
+header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    background-color: var(--foreground-color);
+    background-image: var(--foreground-image);
+    border-bottom: 2px solid;
+    border-color: var(--border-color);
+    margin-bottom: var(--section-space);
+}
+
+header .brand{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 350px;
+    height: inherit;
+}
+
+header .brand .logo .title{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: inherit;
+    margin: 3px;
+}
+
+header .brand .title{
+    width: 230px;
+}
+
+a:link,
+a:visited{
+  color: white;
+}
+
+header .contact{
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.contact img{
+  margin: 10px;
+  width: 42px;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 15px;
+  height: calc(auto + 100px);
+}
+
+section {
+  width: 100%;
+  height: auto;
+  padding: 1px;
+  border-radius: 15px;
+  background-image: var(--image-bck-fundo);
+}
+
+#canvas-display,
+#canvas-results
+{
+  width: 100%;
+  height: 790px;
+  display: flex;
+  background-color: #1b2a4b;
+  background-image: url('../images/bckblack.png');
+  border-color: var(--border-color);
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  border-top: 2px solid;
+  border-color: var(--border-color);
+  border-radius: 10px 10px 10px 10px;
+  background-image: url('../images/foreground.png');
+}
+
+.footer-tools{
+  width:50%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    width: 19%;
+    height: auto;
+}
+
+footer .footer-social-media, .footer-tools {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  border-radius: 0;
+  border: none;
+}
+
+.footer-social-media div,
+.footer-tools div{
+    width: 100%;
+    height: auto;
+    padding: 2px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0;
+    border: none;
+  }
+
+.footer-social-media div img {
+  width: 130%;
+  height: auto;
+  padding: 2px;
+}
+
+.footer-tools div img{
+  width: 8%;
+  height: auto;
+  padding: 2px;
+}
