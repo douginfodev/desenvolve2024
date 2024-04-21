@@ -18,7 +18,7 @@
   --background-image:  url('../images/bck_graydark.png');
   --background1-image:  url('../images/bck-card-titulo.png');
   --foreground-color: #2c2965;
-  --foreground-image:  url('../images/foreground.png');
+  --foreground-image:  url('../images/bck-gray.png');
 
   --section-space: 16px;
   --line-height: 24px;
@@ -72,9 +72,10 @@ p{
 b{
   color: var(--primary-color);
 }
+
 span {
     font-size: 1.4rem;
-    color: white;
+    color: #2dd454;
   }
 
 ul{
@@ -105,10 +106,8 @@ header .brand{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
     width: 350px;
     height: inherit;
-    border: 1px solid white;
 }
 
 header .logo{
@@ -117,7 +116,13 @@ header .logo{
     justify-content: center;
     width: 120px;
     height: inherit;
+    padding: 4px;
     margin: 3px;
+}
+
+header .logo img{
+  width: 70%;
+  height: auto;
 }
 
 header .logo-title{
@@ -141,10 +146,31 @@ main {
 
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
-  height: 200px;
+  height: 450px;
   padding: 10px;
   border-top: 2px solid;
-  background-image: var(--background1-image);
+  background-image: var(--background-image);
+  text-align: center;
+}
+
+footer .footer-col{
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: var(--padding-default);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--section-space);
+
+}
+
+footer .footer-col img{
+  border-radius: 15px;
+  width: 80%;
+  height: auto;
 }
