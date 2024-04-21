@@ -14,8 +14,8 @@
   --primary-color: #7bbcfc;
   --secondary-color: #0c4d8d;
 
-  --background-color: #060A26;
-  --background-image:  url('../images/backdarkblue.png');
+  --background-color: #2e2929;
+  --background-image:  url('../images/bck_graydark.png');
   --background1-image:  url('../images/bck-card-titulo.png');
   --foreground-color: #2c2965;
   --foreground-image:  url('../images/foreground.png');
@@ -30,10 +30,11 @@
 }
 
 .wrapper {
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   width: 98%; /*1366 XX 768*/
   height: 1500px;
-  margin: 0 auto;
   max-width: 1900px;
   background-color: var(--background-color);
   background-image: var(--background-image);
@@ -94,7 +95,7 @@ header{
     height: 90px;
     display: flex;
     background-color: var(--foreground-color);
-    background-image: var(--foreground-image);
+    background-image: var(--background-image);
     border-bottom: 2px solid;
     border-color: var(--border-color);
     margin-bottom: var(--section-space);
@@ -107,9 +108,10 @@ header .brand{
     padding: 5px;
     width: 350px;
     height: inherit;
+    border: 1px solid white;
 }
 
-header .brand .logo .title{
+header .logo{
     display:flex;
     align-items: center;
     justify-content: center;
@@ -118,7 +120,7 @@ header .brand .logo .title{
     margin: 3px;
 }
 
-header .brand .title{
+header .logo-title{
     width: 230px;
 }
 
@@ -127,46 +129,15 @@ a:visited{
   color: white;
 }
 
-header .contact{
-  width: 80%;
-  height: auto;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-
-.contact img{
-  margin: 10px;
-  width: 42px;
-  cursor: pointer;
-}
-
 main {
+  width: 100%;
+  height: 800PX;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding: 15px;
-  height: calc(auto + 100px);
+  padding: 8px;
+  background-image: var(--foreground-image);
 }
 
-section {
-  width: 100%;
-  height: auto;
-  padding: 1px;
-  border-radius: 15px;
-  background-image: var(--image-bck-fundo);
-}
-
-#canvas-display,
-#canvas-results
-{
-  width: 100%;
-  height: 790px;
-  display: flex;
-  background-color: #1b2a4b;
-  background-image: url('../images/bckblack.png');
-  border-color: var(--border-color);
-}
 
 footer {
   display: flex;
@@ -175,58 +146,5 @@ footer {
   height: 200px;
   padding: 10px;
   border-top: 2px solid;
-  border-color: var(--border-color);
-  border-radius: 10px 10px 10px 10px;
-  background-image: url('../images/foreground.png');
-}
-
-.footer-tools{
-  width:50%;
-  height: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.footer-contacts {
-    display: flex;
-    flex-direction: column;
-    width: 19%;
-    height: auto;
-}
-
-footer .footer-social-media, .footer-tools {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  height: auto;
-
-  justify-content: space-around;
-  align-items: center;
-  padding: 5px;
-  border-radius: 0;
-  border: none;
-}
-
-.footer-social-media div,
-.footer-tools div{
-    width: 100%;
-    height: auto;
-    padding: 2px;
-    display: flex;
-    justify-content: space-around;
-    border-radius: 0;
-    border: none;
-  }
-
-.footer-social-media div img {
-  width: 130%;
-  height: auto;
-  padding: 2px;
-}
-
-.footer-tools div img{
-  width: 8%;
-  height: auto;
-  padding: 2px;
+  background-image: var(--background1-image);
 }
