@@ -20,7 +20,7 @@
   --foreground-color: #2c2965;
   --foreground-image: url('../images/bck-gray.png');
 
-  --section-space: 16px;
+  --section-space: 24px;
   --line-height: 24px;
 
   --font-family: 'Roboto', serif;
@@ -91,6 +91,7 @@ input {
 h1 {
   font-size: 2.4rem;
   font-weight: 700;
+  text-transform: uppercase;
   color: var(--primary-color);
 }
 
@@ -99,6 +100,9 @@ h2 {
   font-size: 2.4rem;
   font-weight: 700;
   color: var(--primary-color);
+  text-transform: uppercase;
+  padding: 8px;
+  margin: 8px;
 }
 
 p {
@@ -124,6 +128,8 @@ ol {
   padding:4px;
   color: white;
   border-bottom: 1px solid white;
+  text-transform: uppercase;
+  list-style-type: none;
 }
 
 Ol li {
@@ -131,6 +137,7 @@ Ol li {
   line-height: 2.3rem;
   margin-bottom: 12px;
   color: var(--border-color);
+  text-transform: uppercase;
 }
 
 header {
@@ -179,7 +186,7 @@ a:visited {
 /* MAIN */
 main {
   width: 100%;
-  height: 1650PX;
+  height: 2250PX;
   display: flex;
   padding: 8px;
   background-image: var(--foreground-image);
@@ -206,6 +213,7 @@ section.section-display {
   height: 400px;
   padding: 4px;
   text-align: center;
+  margin-bottom: var(--section-space);
 }
 
 section.section-display img {
@@ -222,6 +230,11 @@ section.section-products {
   flex-direction: column;
   text-align: center;
   background-image: var(--background-image);
+  margin-bottom: var(--section-space);
+}
+
+section.section-products h1 {
+  margin: var(--section-space);
 }
 
 section.section-products-line {
@@ -267,7 +280,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 550px;
+  height: 650px;
   padding: 10px;
   border-top: 2px solid;
   background-image: var(--background-image);
@@ -319,7 +332,7 @@ footer .footer-contact img {
     flex-direction: row;
     align-items: center;
     width: 100%;
-    height: 200px;
+    height: 300px;
     padding: 10px;
     border-top: 2px solid;
     border-color: white;
