@@ -1,4 +1,4 @@
-import { perfume } from "../models/Perfume.js";
+import perfume from '../models/Perfume.js'
 
 class PerfumeController {
 
@@ -11,7 +11,7 @@ class PerfumeController {
     }
   };
 
-  static listarAutorPorId = async (req, res) => {
+  static listarPerfumePorId = async (req, res) => {
     try {
       const id = req.params.id;
 

@@ -8,6 +8,6 @@ routes.get("/perfume", PerfumeController.listarPerfumes);
 routes.get("/perfume/:id", PerfumeController.listarPerfumePorId);
 routes.post("/perfume", PerfumeController.cadastrarPerfume);
 routes.put("/perfume/:id", PerfumeController.atualizarPerfume);
-routes.delete("/perfume/:id", PerfumeController.excluirPrtfume);
+routes.delete("/perfume/:id", PerfumeController.excluirPerfume);
 
 export default routes;

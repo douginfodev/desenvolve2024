@@ -144,6 +144,7 @@ header {
   width: 100%;
   height: 90px;
   display: flex;
+  justify-content: start;
   background-color: var(--foreground-color);
   background-image: var(--background-image);
   border-bottom: 2px solid;
@@ -153,7 +154,7 @@ header {
 
 header .brand {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   width: 350px;
   height: inherit;
@@ -175,7 +176,17 @@ header .logo img {
 }
 
 header .logo-title {
+  display: none;
   width: 230px;
+}
+
+header #menu-top-logo{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 8px;
 }
 
 a:link,
@@ -200,12 +211,13 @@ aside {
   background-image: var(--background-image);
 }
 
-section.section-main {
-  width: 1700px;
+section .section-main {
+  width: 100%;
   height: inherit;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  
 }
 
 section.section-display {
@@ -214,6 +226,7 @@ section.section-display {
   padding: 4px;
   text-align: center;
   margin-bottom: var(--section-space);
+  background-image: url('../images/bck_teal.png');
 }
 
 section.section-display img {
@@ -318,25 +331,156 @@ footer .footer-contact img {
   height: auto;
 }
 
-@media only screen and (min-width: 715px) {
+
+aside{
+  display: none; 
+  position: relative;
+  left:0;
+  top:50px;
+}
+
+#menu-top-logo {
+  display: none;
+}
+
+/*
+@media only screen and (max-width: 715px) {
+
+  header #menu-top-logo{
+    display: none;
+  }
+
+  section .section-display{
+    width: 100%;
+    height: auto;
+    border: 1px solid white;
+  }
+
+  section.section-products {
+    width: 100%;
+    height: 800px;
+    padding: 4px;
+    text-align: center;
+    background-image: var(--background-image);
+    margin-bottom: var(--section-space);
+    /* background-image: url('../images/bck_teal.png'); /
+  }
+
+
+
   footer {
     background-image: var(--background1-image);
   }
 
+  aside {
+    display: block;
+    width: 200px;
+    height: inherit;
+    padding: 6px;
+    background-image: var(--background-image);
+  }
 }
 
 /* large */
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 485px) {
+  
+  .wrapper{
+    width: 100%;
+    height: 6000px;
+    min-width: 430px;
+  }
+
+  .section-display{
+    display: none;
+  }
+
+  h1,h2{
+    font-size: 1.8rem;
+    padding: 2px;
+    margin: 0px;
+  }
+
+  main {
+    width: 100%;
+    height: 5700px;
+  }
+
+  
+
+  section.section-main {
+    width: 100%;
+    height: 5700px;
+  }
+
+  section.section-display {
+    width: 100%;
+    height: 120px;
+  }
+
+  section.section-display img{
+    width: 100%;
+    height: auto;
+  }
+
+  section.section-products {
+    width: 100%;
+    height: 1070px;
+   }
+
+  section.section-products-line {
+    width: 99%;
+    height: 1000px;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: var(--background-image);
+    margin-bottom: var(--section-space);
+  }
+
+  /* CARDS */
+div.card-products{
+  width: 92%;
+  height: 330px;
+  margin-bottom: var(--section-space);
+  border-radius: 0 0 15px 15px;
+}
+
+div.card-products img{
+  width: 100%;
+  height: auto;
+  margin-bottom: var(--section-space);
+}
+
+section#section-products-rowid {
+  width: 100%;
+  height: 1500px;
+ }
+
+ section#section-products-rowline {
+  width: 99%;
+  height: auto;
+ }
+
+  
   footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     width: 100%;
-    height: 300px;
-    padding: 10px;
-    border-top: 2px solid;
+    height: 600px;
+    gap: 8px;
+    padding: 5px;
     border-color: white;
     background-image: var(--background-image);
     text-align: center;
+  }
+
+  div.footer-col{
+    width: inherit;
+    height: 200px;
   }
 }

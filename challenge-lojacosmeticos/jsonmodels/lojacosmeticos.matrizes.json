@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "669d34c664f29b795ffbea18"
+  },
+  "_sku": 1,
+  "genero": "feminino",
+  "marca": "boticolection",
+  "linha": "acqua fresca",
+  "concentracao": "desodorante colonia",
+  "subfamilia": [
+    "amadeirado"
+  ],
+  "quantidade": 100,
+  "preco": 125,
+  "desconto": 30,
+  "pagtovezes": 3,
+  "lancamento": false,
+  "titulo": "Perfume Agua Rara"
+}]

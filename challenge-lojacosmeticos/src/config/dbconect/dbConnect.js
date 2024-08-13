@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 async function conectar(){
-    mongoose.connect("mongodb://localhost:27017/livros");
+    mongoose.connect(process.env.DB_CONNECTION_STRING);
 
   return mongoose.connection;
 };

@@ -1,5 +1,6 @@
-import express from "express";
+/*import express from "express";
 import conectar from "./config/dbconect/dbConnect.js";
+import sabonetes from "./models/Sabonete.js";
 
 const conexao = await conectar();
 
@@ -27,8 +28,9 @@ function buscaLivro(id) {
     })
    }
 
-app.get("/",(req , res) =>{
-    res.status(200).send("Curso de Node");
+app.get("/sabonete",async (req , res) =>{
+  const listAll = await sabonetes.find({})  
+  res.status(200).json(listAll);
 })
 
 app.get("/livros",(req , res) =>{
@@ -44,12 +46,23 @@ app.put("/livros/:id",(req , res) =>{
     const index = buscaLivro(req.params.id);
     livros[index].titulo = req.body.titulo;
     res.status(201).json(livros);
+})*/
+import express from "express";
+import conectaNaDatabase from "./config/dbconect/dbConnect.js";
+import routes from "./routes/index.js";
+
+const conexao = await conectaNaDatabase();
+
+conexao.on("error", (erro) => {
+  console.error("erro de conexão", erro);
+});
+
+conexao.once("open", () => {
+  console.log("Conexao com o banco feita com sucesso");
 })
 
-app.delete("/livros/:id",(req , res) =>{
-    const index = buscaLivro(req.params.id);
-    livros.splice(index,1);
-    res.status(204).send("Livro removido!");
-})
+const app = express();
+app.use(express.json());
+routes(app);
 
 export default app;
