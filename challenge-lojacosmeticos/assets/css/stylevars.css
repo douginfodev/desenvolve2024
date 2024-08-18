@@ -250,7 +250,8 @@ section.section-products h1 {
   margin: var(--section-space);
 }
 
-section.section-products-line {
+section.section-products-line,
+.section-products-line-capa {
   width: 100%;
   height: 320px;
   padding: 4px;
@@ -258,22 +259,57 @@ section.section-products-line {
   justify-content: space-around;
 }
 
+section.section-products-line-capa{
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.products-line-capa img{  
+  width: 25%;  
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
 /* CARDS */
 div.card-products{
   width: 24%;
   height: inherit;
-  border-radius: 15px;
+  border-radius: 0 0 15px 15px;
+  margin: 12px;
   border: 1px solid;
   border-color: #2e2929;
   background-image: var(--foreground-image);
 }
 
+div.card-products-capa{
+  width: 50%;
+  height: 230px;
+  border-radius: 0 0 15px 15px;
+  margin: 8px;
+}
+
 div.card-products-brand{
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 98%;
   height: 220px;
   border-radius: 15px;
-  background-image: var(--background-image);
+  background-image: var(--background-image);  
+  cursor: pointer;
 }
+
+div.card-products-brand1 img{
+  width: auto;
+  height: 100%;
+  border-radius: 30px;
+  cursor: pointer;
+}
+  
 
 div.card-products-footer{
   width: 100%;
@@ -289,11 +325,10 @@ div.card-products-footer{
 /****** FOOTER *********/
 footer {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 650px;
+  height: 330px;
   padding: 10px;
   border-top: 2px solid;
   background-image: var(--background-image);
@@ -306,7 +341,7 @@ footer .footer-col {
   display: flex;
   padding: var(--padding-default);
   flex-direction: column;
-  justify-content: center;
+  gap: 2px;
   align-items: center;
   margin-bottom: var(--section-space);
 
@@ -314,7 +349,7 @@ footer .footer-col {
 
 footer .footer-col img {
   border-radius: 15px;
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
@@ -331,15 +366,7 @@ footer .footer-contact img {
   height: auto;
 }
 
-
-aside{
-  display: none; 
-  position: relative;
-  left:0;
-  top:50px;
-}
-
-#menu-top-logo {
+#menu-top-logo img{
   display: none;
 }
 
