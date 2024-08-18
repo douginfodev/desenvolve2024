@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../../assets/css/stylevars.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css" /> -->
+    <meta name="Description" content="Challenge 01 - Desenvolve - Loja Virtual de Cosméticos">
+    <meta name="author" content="Douglas Ramos - Prof. DOM">
+    <meta name="robots" content="index,follow">
+    <title>Desenvolve - Loja Virtual de Cosméticos</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="brand">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="../../assets/images/logodsv2024.png" alt="Desenvolve - Cosméticos Online">
+                    </a>
+                </div>
+                <div class="logo-title">
+                    <h1>DESENVOLVE</h1>
+                    <h2><span> 2024</span></h2>
+                </div>
+            </div>
+            <div id="menu-top-logo">
+                <img src="../../assets/images/menu-logo.jpg" alt="Icone Menu" onclick="menu()">
+            </div>
+        </header>
+
+        <!-- PRINCIPAL -->
+        <main>
+            <aside>
+                <a class="nav-side">
+                    <a href="produtos/">
+                        <h2>PRODUTOS</h2>
+                    </a>
+                    <ol>
+                        <a href="produtos/lanc">
+                            <li>LANÇAMENTOS</li>
+                        </a>
+                        <a href="produtos/promo">
+                            <li>PROMOÇÕES</li>
+                        </a>
+                    </ol>
+                    <a href="index.html">
+                        <h2>perfumaria</h2>
+                    </a>
+                    <ol>
+                        <a href="produtos/feminino">
+                            <li>feminino</li>
+                        </a>
+                        <a href="produtos/infantil">
+                            <li>infantil</li>
+                        </a>
+                        <a href="produtos/masculino">
+                            <li>masculino</li>
+                        </a>
+                        <a href="produtos/unissex">
+                            <li>unissex</li>
+                        </a>
+                    </ol>
+                    <a href="index.html">
+                        <h2>corpo e banho</h2>
+                    </a>
+                    <ol>
+                        <a href="produtos/sabonetes">
+                            <li>sabonetes</li>
+                        </a>
+                        <a href="produtos/desodorantes">
+                            <li>desodorantes</li>
+                        </a>
+                        <a href="produtos/solar">
+                            <li>linha / solar</li>
+                        </a>
+                        <a href="produtos/barba">
+                            <li>linha / Barba</li>
+                        </a>
+                    </ol>
+                    <a href="index.html">
+                        <h2>make</h2>
+                    </a>
+                    <ol>
+                        <a href="produtos/boca">
+                            <li>boca</li>
+                        </a>
+                        <a href="produtos/olhos">
+                            <li>olhos</li>
+                        </a>
+                        <a href="produtos/rosto">
+                            <li>rosto</li>
+                        </a>
+                        <a href="produtos/maquiagem">
+                            <li>maquiagem</li>
+                        </a>
+                    </ol>
+                    </nav>
+            </aside>
+
+            <section class="section-main">
+               
+                <!-- perfumaria -->
+                <section class="section-products" id="section-products-rowid">
+                    <h1>perfumaria</h1>
+
+
+                     <!-- produtos -->
+                <section class="section-products-capa">
+                    <section class="section-products-line-capa">
+                        <div class="card-products-capa" id="card-products-capa"></div>
+                        <div class="card-products-capa">
+                            <div class="card-products-brand1">
+                            <a href="produtos/lanc">
+                                <img src="../../assets/images/lancamentoscapa.jpg" alt="Lancamentos" />
+                            </a>  
+                            </div>
+                        </div>
+
+                        <div class="card-products-capa">
+                            <div class="card-products-brand1">
+                                <a href="produtos/promo">  
+                                <img src="../../assets/images/promocoescapa.jpg" alt="Lancamentos" />
+                                </a>  
+                            </div>
+                        </div>
+                        <div class="card-products-capa" id="card-products-capa"></div>
+
+                    </section>
+                </section>
+
+
+                    <section class="section-products-line" id="section-products-rowline">
+                        <div class="card-products">
+                            <div class="card-products-brand">
+                                <img src="../../assets/images/femininoperfumes-capa.jpg" alt="feminino" />
+                            </div>
+
+                            <div class="card-products-footer">
+                                <button id="btn-outline-disabled" class="btn-outline">feminino</button></a>
+                            </div>
+                        </div>
+
+                        <div class="card-products">
+                            <div class="card-products-brand">
+                                <img src="../../assets/images/capainfantil.jpg" alt="infantil" />
+                            </div>
+
+                            <div class="card-products-footer">
+                                <button id="btn-outline-disabled" class="btn-outline">infantil</button></a>
+                            </div>
+                        </div>
+
+                        <div class="card-products">
+                            <div class="card-products-brand">
+                                <img src="../../assets/images/masculinoperfumes-capa.jpg" alt="masculino" />
+                            </div>
+
+                            <div class="card-products-footer">
+                                <button id="btn-outline-disabled" class="btn-outline">Masculino</button></a>
+                            </div>
+                        </div>
+
+                        <div class="card-products">
+                            <div class="card-products-brand">
+                                <img src="../../assets/images/capaunissex.jpg" alt="unissex" />
+                            </div>
+
+                            <div class="card-products-footer">
+                                <button id="btn-outline-disabled" class="btn-outline">Unissex</button></a>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-col">
+                <h1>DESENVOLVE - COSMÉTICOS ONLINE</h1>
+                <H2>AV. REDE WEB, 150</H2>
+                <h2>Weblandia, Webcity</h2>
+                <h2>29000-000</h2>
+            </div>
+            <div class="footer-col">
+                <h1>FORMAS DE PAGAMENTO</h1>
+                <img src="../../assets/images/formaspagamentos2.png" alt="forma de pagamentos">
+            </div>
+            <div class="footer-col">
+                <h1>PROGRAMA DESENVOLVE 2024</h1>
+                <h2>Projeto Aluno - Douglas Ramos</h2>
+                <div class="footer-contact">
+                    <a href="https://www.youtube.com/@profdomdev" target="_blank" title="Canal Youtube - Prof. DOM"><img
+                            src="../../assets/images/logoyoutube48x48.svg" alt="Canal Youtube - Prof. DOM"
+                            target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/douglas-ramos-dev" target="_blank"><img
+                            src="../../assets/images/linkedin48x48.svg" alt="linkedin.com/in/douglas-ramos-dev"></a>
+                    <a href="https://instagram.com/profdomdev" target="_blank"><img
+                            src="../../assets/images/instagram48x48.svg" alt="instagram.com/@profdomdev"></a>
+                    <a href="https://www.github.com/douginfodev" target="_blank"><img src="../../assets/images/logogit.png"
+                            alt="github.com/douginfodev"></a>
+                </div>
+            </div>
+        </footer>
+    </div> <!-- wrapper  -->
+    
+</body>
+
+</html>
